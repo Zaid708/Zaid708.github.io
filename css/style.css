@@ -1,0 +1,143 @@
+header{
+  font-family:sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight:600;
+  margin: 30;
+  padding: 30;
+  background-color: rgba(202, 221, 224, 0.247);
+  box-shadow: #00090e;
+}
+
+body {
+    font-family: lato, sans-serif;
+    min-height : 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 30;
+    padding: 10;
+    background-color: white;
+}
+  
+  .page-title {
+    text-align: center;
+    font-weight: 100;
+    background-color: #57a2dc;
+    padding:30px ;
+    margin-top: 0%;
+  }
+  
+  .page-description {
+    border: 1px solid #000;
+    margin: 2px;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .gallery {
+    margin: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:baseline;
+    border: 2px solid beige;
+    background-color: lavender;
+    }
+  
+  nav {
+    float: inline-end;
+    background-color: #57a2dc;
+  }
+  nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav li{
+    float:left;
+    display:inline-block;
+    margin-right:70px;
+    padding-bottom: 25px;
+    position: relative;
+  }
+  nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  nav a:hover{
+    color:#000
+  }
+  nav a::before{
+    content:'';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color:#444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  nav a:hover::before{
+    width:100%;
+  }
+  .next-btn a:active {
+  
+  }
+  
+  .next-btn {
+    float: right;
+  }
+  
+  .next-btn a {
+    cursor: pointer;
+    margin-right: 30px;
+    padding: 8px 18px;
+    border: 1px solid #204156;
+  
+  }
+  
+  .back-btn a:active {
+  
+  }
+  .back-btn {
+    float: left;
+  }
+  
+  .back-btn a {
+    cursor: pointer;
+    margin-right: 30px;
+    padding: 8px 18px;
+    border: 1px solid #204156;
+  
+  }
+  nav a {
+    height: 60px;
+    line-height: 60px;
+    color: #204156;
+    text-decoration: none;
+  }
+.blog-box{
+  width:350px;
+  background-color: white;
+  border: 1px solid #d2ce91;
+  margin: 20px;
+}
+.blog-text{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.blod-text p{
+  color:burlywood;
+  font-size: 0.9rem;
+}
+.next-pages{
+  font-size: 20px;
+  font-family: fantasy;
+
+}
