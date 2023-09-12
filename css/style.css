@@ -1,12 +1,10 @@
 header{
   font-family:sans-serif;
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
   font-weight:600;
   margin: 30;
   padding: 30;
-  background-color: rgba(202, 221, 224, 0.247);
+  background-color: white;
   box-shadow: #00090e;
 }
 
@@ -20,26 +18,25 @@ body {
     line-height: 1.5;
     margin: 30;
     padding: 10;
-    background-color:honeydew ;
+    background-color:whitesmoke ;
 }
   
   .page-title {
-   font-family:cursive;
-   text-align: center;
-    font-weight: 100;
+    font-weight: 600;
+    text-align: center;
     background-color: transparent;
-    padding:30px ;
-    margin-top: 0%;
+    padding:5px ;
+    margin-top:5px;
   }
   
-  .page-description {
+  .pagedescription {
     border: 1px solid #000;
     margin: 2px;
     text-align: center;
     padding: 30px;
   }
   
-  .gallery {
+  .galleryindex {
     margin: 0px;
     display: flex;
     flex-wrap: nowrap;
@@ -48,29 +45,37 @@ body {
     background-color: none ;
     text-align: center;
     }
-  
-  nav {
+
+    .galleryprofile {
+      margin: 0px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content:baseline;
+      border: 2px solid gold;
+      background-color: none ;
+      text-align: center;
+      } 
+  nav { 
     float: inline-end;
-    background-color: transparent;
+    background-color: rgb(154, 199, 221);
   }
   nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: armenian;
+    margin:0;
+    padding:0;
+    list-style:armenian;
   }
   nav ul li{
-    float:left;
     display:inline-block;
-    margin-right:70px;
+    margin-left:150px;
     padding-bottom: 25px;
     position:relative;
   }
   nav a{
     font-family: cursive;
-    color: #444;
+    color: black;
     text-decoration: wavy;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 13px;
   }
   nav a:hover{
     color:#000
@@ -89,48 +94,36 @@ body {
   nav a:hover::before{
     width:100%;
   }
-  .next-btn a:active {
   
-  }
-  
-  .next-btn {
-    float: right;
-  }
-  
-  .next-btn a {
-    cursor: pointer;
-    margin-right: 30px;
-    padding: 8px 18px;
-    border: 1px solid #204156;
-  
-  }
-  
-  .back-btn a:active {
-  
-  }
-  .back-btn {
-    float: left;
-  }
-  
-  .back-btn a {
-    cursor: pointer;
-    margin-right: 30px;
-    padding: 8px 18px;
-    border: 1px solid #204156;
-  
-  }
-  nav a {
-    height: 60px;
-    line-height: 60px;
-    color: #204156;
-    text-decoration: none;
-  }
   .Chracteristic{
   font-size: 20px;
   }
 
 .next-pages{
   font-size: 20px;
-  font-family: fantasy;
+  font-family:fantasy;
+}
+table, th, td{
+  border:2px solid rgb(125, 152, 221);
+  border-style:double;
+}
+th{
+  text-transform: uppercase;
 
+}
+.progress {
+  background: #d4a0a03f;
+  border-radius: 13px;
+  height: 20px;
+  width: 300px;
+  padding: 3px;
+}
+
+.progress:after {
+  content: '';
+  display: block;
+  background: rgb(85, 142, 207);
+  width: 50%;
+  height: 100%;
+  border-radius: 9px;
 }
