@@ -2,10 +2,11 @@ header{
   font-family:sans-serif;
   min-height: 100%;
   font-weight:600;
-  margin: 30;
-  padding: 30;
+  margin:0 ;
+  padding:20px;
   background-color: white;
   box-shadow: #00090e;
+  width: 100%;
 }
 
 
@@ -16,8 +17,9 @@ body {
     flex-direction: column;
     font-weight: 300;
     line-height: 1.5;
-    margin: 30;
-    padding: 10;
+    margin:0;
+    width: 100%;
+    padding:0;
     background-color:whitesmoke ;
 }
   
@@ -66,16 +68,17 @@ body {
   }
   nav ul li{
     display:inline-block;
-    margin-left:150px;
     padding-bottom: 25px;
     position:relative;
+    margin-left: 150px;
+    margin-top: 10px;
   }
   nav a{
-    font-family: cursive;
-    color: black;
+    font-family: sans-serif;
+    color: white;
     text-decoration: wavy;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 15px;
   }
   nav a:hover{
     color:#000
@@ -104,26 +107,78 @@ body {
   font-family:fantasy;
 }
 table, th, td{
-  border:2px solid rgb(125, 152, 221);
-  border-style:double;
+  border:thin 2px rgb(125, 152, 221);
+  border-style:groove;
+  width: auto;
+  text-align: center;
+  margin-top: 10px;
+ margin-left: auto;
+ margin-right: auto;
 }
 th{
   text-transform: uppercase;
 
 }
+#green{
+ background-color:green;
+}
+#fail{
+  background-color: red;
+}
 .progress {
   background: #d4a0a03f;
-  border-radius: 13px;
+  border-radius: 16px;
   height: 20px;
   width: 300px;
   padding: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 .progress:after {
   content: '';
   display: block;
   background: rgb(85, 142, 207);
-  width: 50%;
+  width: 20%;
   height: 100%;
   border-radius: 9px;
 }
+footer {
+  background-color:  rgb(106, 158, 185);
+  color: white;
+  bottom: 0;
+  width: 100vw;
+  font-size: 16px;
+}
+footer * {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.copyright {
+  padding: 0.3em 1em;
+  background-color:  rgb(154, 199, 221);
+}
+.footer-menu{
+  float: left;
+    margin-top: 10px;
+}
+.footer-menu a{
+  color: #cfd2d6;
+  padding: 6px;
+  text-decoration: none;
+}
+.footer-menu a:hover, .social i:hover{
+  color: #c7940a;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+}
+@media screen and (max-width: 950px) {
+  .row.primary {
+    grid-template-columns: 1fr;
+  }
+}
+
